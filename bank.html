@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="mt-10 bg-purple-200 w-4/5 mx-auto rounded-lg p-14">
+        <div class="mb-16">
+            <h1 class="text-6xl text-center"><span class="text-purple-500 font-semibold ">Let's have some</span> <span
+                    class="text-purple-700 font-bold">M<span class="text-4xl">🤑</span>ney!</span>
+            </h1>
+        </div>
+        <section>
+            <div class="grid grid-cols-3 gap-4 mx-auto w-9/12 text-purple-100">
+                <div class="bg-purple-600 p-8 rounded-lg">
+                    <h3 class="text-3xl font-semibold">Deposit</h3>
+                    <h2 class="text-5xl">$<span id="total-deposit">00</span></h2>
+                </div>
+                <div class="bg-purple-500 p-8 rounded-lg">
+                    <h3 class="text-3xl font-semibold">Withdraw</h3>
+                    <h2 class="text-5xl">$<span id="total-withdraw">00</span></h2>
+                </div>
+                <div class="bg-purple-600 p-8 rounded-lg">
+                    <h3 class="text-3xl font-semibold">Balance</h3>
+                    <h2 class="text-5xl">$<span id="total-balance">1380</span></h2>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 mt-10 gap-4 mx-auto w-9/12">
+                <div class="bg-purple-400 p-8 rounded-lg">
+                    <h3 class="text-4xl text-purple-500 font-semibold mb-5 text-purple-100">Deposit</h3>
+                    <input class="mb-3 p-2 rounded-md w-full" type="number" name="" id="deposit-amount"
+                        placeholder="Enter Your Amount for Deposit">
+                    <br>
+                    <button id="btn-deposit"
+                        class="mb-3 py-2 px-6 rounded-md bg-purple-800 font-semibold hover:bg-purple-700 text-purple-100"
+                        type="submit">Deposit</button>
+                </div>
+                <div class="bg-purple-400 p-8 rounded-lg">
+                    <div class="">
+                        <h3 class="text-4xl text-purple-500 font-semibold mb-5 text-purple-100">Withdraw</h3>
+                        <input class="mb-3 p-2 rounded-md w-full" type="number" name="" id="withdraw-amount"
+                            placeholder="Enter Your Amount for Withdraw">
+                        <br>
+                        <button id="btn-withdraw"
+                            class="mb-3 py-2 px-6 rounded-md bg-purple-800 font-semibold hover:bg-purple-700 text-purple-100"
+                            type="submit">Withdraw</button>
+                    </div>
+                </div>
+        </section>
+    </section>
+
+    <script src="bank.js"></script>
+</body>
+
+</html>
